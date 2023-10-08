@@ -11,6 +11,6 @@ Supervisors: Krista Alikas, Ian-Andreas Rahn
 
 #### Preprocessing
 
-- [v03p01_facts_extractor_games.ipynb](https://github.com/fjodorsevtsenko/rs-pr-water/blob/main/src/preprocessing/01 - nc-extractor.ipynb).
+- [v03p01_facts_extractor_games.ipynb](https://github.com/fjodorsevtsenko/rs-pr-water/blob/main/src/preprocessing/01-nc-extractor.ipynb).
   - [01-01]: Iterate over raw data
   - [01-02]: Save extracted data
