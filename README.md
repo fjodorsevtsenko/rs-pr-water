@@ -17,3 +17,6 @@ Supervisors: Krista Alikas, Ian-Andreas Rahn
 
 #### Exploration
 - [02-festom-exploration.ipynb](https://github.com/fjodorsevtsenko/rs-pr-water/blob/main/src/exploration/02-festom-exploration.ipynb)
+
+#### Photodiode; correlation
+- [_ltt000027_fsevts_01_photodiode_correlation.ipynb](https://github.com/fjodorsevtsenko/rs-pr-water/blob/main/src/photodiode/fsevts/notebooks/_ltt000027_fsevts_01_photodiode_correlation.ipynb)
