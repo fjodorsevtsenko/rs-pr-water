@@ -12,7 +12,7 @@ class Helper:
     def read_monitorpd(self, _path) -> pd.DataFrame:
         df_ = pd.read_csv(_path, skiprows=2, sep='\t', index_col=None, names=['timestamp', 'lx_'], encoding='latin1')
         df_['timestamp_'] = df_['timestamp'].apply(pd.to_datetime)
-        df_['utf_'] = df_['timestamp_'].apply(lambda x: int(pd.to_datetime(x).timestamp()))
+        df_['utc_'] = df_['timestamp_'].apply(lambda x: int(pd.to_datetime(x).timestamp()))
         return df_
 
     def transform(self, df_photopic, df_monitorpd) -> pd.DataFrame:
@@ -22,7 +22,7 @@ class Helper:
         result['result_'] = 1 / (result['lx_'] * result[
             'v_lambda_'])  # !!! '1 /' - is needed further when we multiple dataframes (ration calculation)
         # Pivot the dataframe
-        pivoted_result = result.pivot_table(index='utf_', columns='wl_', values='result_')
+        pivoted_result = result.pivot_table(index='utc_', columns='wl_', values='result_')
         # Reset index and column names
         pivoted_result.reset_index(inplace=True)
         pivoted_result.columns.name = None
@@ -59,20 +59,20 @@ class Helper:
             var_irradiance = nc_file.variables['irradiance']
             df = pd.DataFrame(np.array(var_irradiance))
             at_ = self.get_nc_acquisition_time(_path, series_nr)
-            df['utf_'] = at_
+            df['utc_'] = at_
             df['irradiance_'] = df[series_nr]
             nc_file.close()
-            return df[['utf_', 'irradiance_']]
+            return df[['utc_', 'irradiance_']]
         except Exception as e:
             pass
 
     def get_nc_combined_and_transformed(self, df_wavelength, df_irradiance) -> pd.DataFrame:
         df_wavelength['irradiance_'] = df_irradiance['irradiance_']
-        df_wavelength['utf_'] = df_irradiance['utf_']
-        df_grouped = df_wavelength[['wl_', 'irradiance_', 'utf_']].groupby(['utf_', 'wl_'])
+        df_wavelength['utc_'] = df_irradiance['utc_']
+        df_grouped = df_wavelength[['wl_', 'irradiance_', 'utc_']].groupby(['utc_', 'wl_'])
         df_grouped = df_grouped['irradiance_'].mean().reset_index()
         # Pivot the dataframe
-        pivoted_result = df_grouped.pivot_table(index='utf_', columns='wl_', values='irradiance_')
+        pivoted_result = df_grouped.pivot_table(index='utc_', columns='wl_', values='irradiance_')
         # Reset index and column names
         pivoted_result.reset_index(inplace=True)
         pivoted_result.columns.name = None
