@@ -1,0 +1,135 @@
+out00_003_records_all_annotated_view
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1537650 entries, 0 to 1537649
+Data columns (total 59 columns):
+ #   Column                      Non-Null Count    Dtype 
+---  ------                      --------------    ----- 
+ 0   _dde                        1537650 non-null  int64 
+ 1   CalvalusID                  1537650 non-null  object
+ 2   Date_                       1537650 non-null  object
+ 3   Latitude                    1537650 non-null  object
+ 4   Longitude                   1537650 non-null  object
+ 5   SourceName                  1537650 non-null  object
+ 6   PixelTime                   1537650 non-null  object
+ 7   PixelX                      1537650 non-null  object
+ 8   PixelY                      1537650 non-null  object
+ 9   PixelLat                    1537650 non-null  object
+ 10  PixelLon                    1537650 non-null  object
+ 11  B1                          1021275 non-null  object
+ 12  B2                          1021275 non-null  object
+ 13  B3                          1021275 non-null  object
+ 14  B4                          1021275 non-null  object
+ 15  B5                          1021275 non-null  object
+ 16  B6                          1021275 non-null  object
+ 17  B7                          1021275 non-null  object
+ 18  B8                          1021275 non-null  object
+ 19  B8A                         1021275 non-null  object
+ 20  B9                          1021275 non-null  object
+ 21  B11                         1021275 non-null  object
+ 22  B12                         1021275 non-null  object
+ 23  QualityAot                  1537650 non-null  object
+ 24  QualityWvp                  1537650 non-null  object
+ 25  QualityCloudConfidence      1537650 non-null  object
+ 26  QualitySnowConfidence       1537650 non-null  object
+ 27  QualitySceneClassification  1537650 non-null  object
+ 28  ViewZenithMean              1021275 non-null  object
+ 29  ViewAzimuthMean             1021275 non-null  object
+ 30  SunZenith                   1537650 non-null  object
+ 31  SunAzimuth                  1537650 non-null  object
+ 32  ViewZenithB1                1021275 non-null  object
+ 33  View_AzimuthB1              1021275 non-null  object
+ 34  ViewZenithB2                1021275 non-null  object
+ 35  ViewAzimuthB2               1021275 non-null  object
+ 36  ViewZenithB3                1021275 non-null  object
+ 37  ViewAzimuthB3               1021275 non-null  object
+ 38  view_zenith_B4              1021275 non-null  object
+ 39  ViewAzimuthB4               1021275 non-null  object
+ 40  ViewZenithB5                1021275 non-null  object
+ 41  ViewAzimuthB5               1021275 non-null  object
+ 42  ViewZenithB6                1021275 non-null  object
+ 43  ViewAzimuthB6               1021275 non-null  object
+ 44  ViewZenithB7                1021275 non-null  object
+ 45  ViewAzimuthB7               1021275 non-null  object
+ 46  ViewZenithB8                1021275 non-null  object
+ 47  ViewAzimuthB8               1021275 non-null  object
+ 48  ViewZenithB8A               1021275 non-null  object
+ 49  ViewAzimuthB8A              1021275 non-null  object
+ 50  ViewZenithB9                1021275 non-null  object
+ 51  ViewAzimuthB9               1021275 non-null  object
+ 52  ViewZenithB10               1021275 non-null  object
+ 53  ViewAzimuthB10              1021275 non-null  object
+ 54  ViewZenithB11               1021275 non-null  object
+ 55  ViewAzimuthB11              1021275 non-null  object
+ 56  ViewZenithB12               1021275 non-null  object
+ 57  ViewAzimuthB12              1021275 non-null  object
+ 58  ExclusionReason             0 non-null        object
+dtypes: int64(1), object(58)
+memory usage: 692.1+ MB
+
+
+-Null---
+_dde                                0
+CalvalusID                          0
+Date_                               0
+Latitude                            0
+Longitude                           0
+SourceName                          0
+PixelTime                           0
+PixelX                              0
+PixelY                              0
+PixelLat                            0
+PixelLon                            0
+B1                             516375
+B2                             516375
+B3                             516375
+B4                             516375
+B5                             516375
+B6                             516375
+B7                             516375
+B8                             516375
+B8A                            516375
+B9                             516375
+B11                            516375
+B12                            516375
+QualityAot                          0
+QualityWvp                          0
+QualityCloudConfidence              0
+QualitySnowConfidence               0
+QualitySceneClassification          0
+ViewZenithMean                 516375
+ViewAzimuthMean                516375
+SunZenith                           0
+SunAzimuth                          0
+ViewZenithB1                   516375
+View_AzimuthB1                 516375
+ViewZenithB2                   516375
+ViewAzimuthB2                  516375
+ViewZenithB3                   516375
+ViewAzimuthB3                  516375
+view_zenith_B4                 516375
+ViewAzimuthB4                  516375
+ViewZenithB5                   516375
+ViewAzimuthB5                  516375
+ViewZenithB6                   516375
+ViewAzimuthB6                  516375
+ViewZenithB7                   516375
+ViewAzimuthB7                  516375
+ViewZenithB8                   516375
+ViewAzimuthB8                  516375
+ViewZenithB8A                  516375
+ViewAzimuthB8A                 516375
+ViewZenithB9                   516375
+ViewAzimuthB9                  516375
+ViewZenithB10                  516375
+ViewAzimuthB10                 516375
+ViewZenithB11                  516375
+ViewAzimuthB11                 516375
+ViewZenithB12                  516375
+ViewAzimuthB12                 516375
+ExclusionReason               1537650
+
+-Duplicates---
+Empty DataFrame
+Columns: [_dde, CalvalusID, Date_, Latitude, Longitude, SourceName, PixelTime, PixelX, PixelY, PixelLat, PixelLon, B1, B2, B3, B4, B5, B6, B7, B8, B8A, B9, B11, B12, QualityAot, QualityWvp, QualityCloudConfidence, QualitySnowConfidence, QualitySceneClassification, ViewZenithMean, ViewAzimuthMean, SunZenith, SunAzimuth, ViewZenithB1, View_AzimuthB1, ViewZenithB2, ViewAzimuthB2, ViewZenithB3, ViewAzimuthB3, view_zenith_B4, ViewAzimuthB4, ViewZenithB5, ViewAzimuthB5, ViewZenithB6, ViewAzimuthB6, ViewZenithB7, ViewAzimuthB7, ViewZenithB8, ViewAzimuthB8, ViewZenithB8A, ViewAzimuthB8A, ViewZenithB9, ViewAzimuthB9, ViewZenithB10, ViewAzimuthB10, ViewZenithB11, ViewAzimuthB11, ViewZenithB12, ViewAzimuthB12, ExclusionReason]
+Index: []
